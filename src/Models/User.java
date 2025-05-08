@@ -12,8 +12,17 @@ public class User {
     private String passwordHash;
     private Date registrationDate;
 
-    //---
-
+    public User(UUID id,
+     String name,
+     String email,
+     String passwordHash,
+     Date registrationDate) {
+        this.id = id;
+        this.name = name;
+        this.email = email;
+        this.passwordHash = passwordHash;
+        this.registrationDate = registrationDate;
+    }
 
 
     public UUID getId() {

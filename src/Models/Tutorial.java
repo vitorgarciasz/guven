@@ -12,4 +12,18 @@ public class Tutorial {
     private String image; //Colocar o url da imagem como string e puxar no front ou outra opção
     //Criar entidade associativa para Admin
 
+    public Tutorial( UUID id,
+     UUID adminId,
+     Date createdAt,
+     String title,
+     String content,
+     String image) {
+        this.id = id;
+        this.adminId = adminId;
+        this.createdAt = createdAt;
+        this.title = title;
+        this.content = content;
+        this.image = image;
+    }
+
 }

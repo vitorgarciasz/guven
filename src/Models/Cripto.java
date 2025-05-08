@@ -8,4 +8,11 @@ public class Cripto {
     private String name;
     private String acronym;
     private BigDecimal presentValue;
+
+    public Cripto(UUID id, String name, String acronym, BigDecimal presentValue) {
+        this.id = id;
+        this.name = name;
+        this.acronym = acronym;
+        this.presentValue = presentValue;
+    }
 }

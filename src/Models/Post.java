@@ -11,4 +11,12 @@ public class Post {
     private String content;
     private Date postDate;
 
+    public Post(UUID id, UUID authorId, UUID topicId, UUID categoryId, String content, Date postDate) {
+        this.id = id;
+        this.authorId = authorId;
+        this.topicId = topicId;
+        this.categoryId = categoryId;
+        this.content = content;
+        this.postDate = postDate;
+    }
 }

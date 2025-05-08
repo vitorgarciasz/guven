@@ -8,4 +8,11 @@ public class Report {
     private UUID userId;
     private String content;
     private Date createdAt;
+
+    public Report(UUID id, UUID userId, String content, Date createdAt) {
+        this.id = id;
+        this.userId = userId;
+        this.content = content;
+        this.createdAt = createdAt;
+    }
 }

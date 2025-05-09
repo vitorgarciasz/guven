@@ -15,4 +15,21 @@ public class Wallet {
         this.cryptoId = cryptoId;
         this.balance = balance;
     }
+
+    public UUID getId() {
+        return id;
+    }
+
+    public UUID getUserId() {
+        return userId;
+    }
+
+    public UUID getCryptoId() {
+        return cryptoId;
+    }
+
+    public BigDecimal getBalance() {
+        return balance;
+    }
+
 }

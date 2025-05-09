@@ -19,4 +19,28 @@ public class Post {
         this.content = content;
         this.postDate = postDate;
     }
+
+    public UUID getId() {
+        return id;
+    }
+
+    public UUID getAuthorId() {
+        return authorId;
+    }
+
+    public UUID getTopicId() {
+        return topicId;
+    }
+
+    public UUID getCategoryId() {
+        return categoryId;
+    }
+
+    public String getContent() {
+        return content;
+    }
+
+    public Date getPostDate() {
+        return postDate;
+    }
 }

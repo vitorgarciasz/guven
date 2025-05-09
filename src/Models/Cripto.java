@@ -15,4 +15,20 @@ public class Cripto {
         this.acronym = acronym;
         this.presentValue = presentValue;
     }
+
+    public UUID getId() {
+        return id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getAcronym() {
+        return acronym;
+    }
+
+    public BigDecimal getPresentValue() {
+        return presentValue;
+    }
 }

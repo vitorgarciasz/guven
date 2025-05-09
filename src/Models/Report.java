@@ -15,4 +15,20 @@ public class Report {
         this.content = content;
         this.createdAt = createdAt;
     }
+
+    public UUID getId() {
+        return id;
+    }
+
+    public UUID getUserId() {
+        return userId;
+    }
+
+    public String getContent() {
+        return content;
+    }
+
+    public Date getCreatedAt() {
+        return createdAt;
+    }
 }

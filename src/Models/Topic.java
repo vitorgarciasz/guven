@@ -17,4 +17,24 @@ public class Topic {
         this.title = title;
         this.createdAt = createdAt;
     }
+
+    public UUID getId() {
+        return id;
+    }
+
+    public UUID getUserId() {
+        return userId;
+    }
+
+    public UUID getCategoryId() {
+        return categoryId;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public Date getCreatedAt() {
+        return createdAt;
+    }
 }

@@ -20,5 +20,27 @@ public class Admin {
         this.registrationDate = registrationDate;
     }
 
-    //Criar entidade associativa para Tutorial
+    public UUID getId() {
+        return id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public String getHashPassword() {
+        return hashPassword;
+    }
+
+    public boolean isMfaActive() {
+        return mfaActive;
+    }
+
+    public Date getRegistrationDate() {
+        return registrationDate;
+    }
 }

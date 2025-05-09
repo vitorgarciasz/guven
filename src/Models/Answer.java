@@ -14,4 +14,20 @@ public class Answer {
         this.postId = postId;
         this.content = content;
     }
+
+    public UUID getId() {
+        return id;
+    }
+
+    public UUID getUserId() {
+        return userId;
+    }
+
+    public UUID getPostId() {
+        return postId;
+    }
+
+    public String getContent() {
+        return content;
+    }
 }

@@ -26,4 +26,27 @@ public class Tutorial {
         this.image = image;
     }
 
+    public UUID getId() {
+        return id;
+    }
+
+    public UUID getAdminId() {
+        return adminId;
+    }
+
+    public Date getCreatedAt() {
+        return createdAt;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public String getContent() {
+        return content;
+    }
+
+    public String getImage() {
+        return image;
+    }
 }

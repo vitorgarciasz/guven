@@ -1,18 +1,20 @@
-package src.Models;
+package src.models;
 
 import java.util.Date;
 import java.util.UUID;
 
-public class Report {
+public class Topic {
     private UUID id;
     private UUID userId;
-    private String content;
+    private UUID categoryId;
+    private String title;
     private Date createdAt;
 
-    public Report(UUID id, UUID userId, String content, Date createdAt) {
+    public Topic(UUID id, UUID userId, UUID categoryId, String title, Date createdAt) {
         this.id = id;
         this.userId = userId;
-        this.content = content;
+        this.categoryId = categoryId;
+        this.title = title;
         this.createdAt = createdAt;
     }
 
@@ -24,8 +26,12 @@ public class Report {
         return userId;
     }
 
-    public String getContent() {
-        return content;
+    public UUID getCategoryId() {
+        return categoryId;
+    }
+
+    public String getTitle() {
+        return title;
     }
 
     public Date getCreatedAt() {

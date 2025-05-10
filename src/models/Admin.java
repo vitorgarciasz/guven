@@ -1,23 +1,24 @@
-package src.Models;
+package src.models;
 
 import java.util.Date;
 import java.util.UUID;
 
-public class Admin {
+public class Admin extends User {
     private UUID id;
     private String name;
     private String email;
     private String hashPassword;
     private boolean mfaActive;
     private Date registrationDate;
+    /*---*/
+    private double position;
+    private String salary;
 
-    public Admin(UUID id, String name, String email, String hashPassword, boolean mfaActive, Date registrationDate) {
-        this.id = id;
-        this.name = name;
-        this.email = email;
-        this.hashPassword = hashPassword;
+    public Admin(UUID id, String name, String email, String hashPassword, boolean mfaActive, Date registrationDate, double position, String salary) {
+        super(id, name, email, hashPassword, registrationDate);
         this.mfaActive = mfaActive;
-        this.registrationDate = registrationDate;
+        this.position = position;
+        this.salary = salary;
     }
 
     public UUID getId() {

@@ -1,4 +1,4 @@
-package src.Models;
+package src.models;
 
 import java.util.Date;
 import java.util.UUID;
@@ -70,6 +70,11 @@ public class User {
     }
     public void activateMFA(){
         this.mfaActive = true;
+    }
+
+    public Post createPost(String content){
+        Post post = new Post(UUID.randomUUID(), this.id, UUID.randomUUID(), UUID.randomUUID(), content, new Date());
+        return post;
     }
 
 }
